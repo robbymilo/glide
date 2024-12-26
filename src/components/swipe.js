@@ -40,7 +40,7 @@ export default function (Glide, Components, Events) {
      * @return {Void}
      */
     start (event) {
-      if (!disabled && !Glide.disabled) {
+      if (!disabled && !Glide.disabled && event.button !== 2) {
         this.disable()
 
         const swipe = this.touches(event)
